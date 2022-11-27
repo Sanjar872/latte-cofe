@@ -6,6 +6,7 @@ import Menu from './Components/Menu/Menu'
 import Worktime from './Components/WorkTime/Worktime';
 import Info from './Components/Infor/Info';
 import Footer from './Components/Footer/Footer';
+import Galery from './Components/Gallery/Gallery';
 function App() {
   return (
     <div className='Container'>
@@ -13,6 +14,7 @@ function App() {
       <Home/>
       <Menu/>
       <Worktime/>
+      <Galery/>
       <Info/>
       <Footer/>
 
