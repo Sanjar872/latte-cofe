@@ -1,10 +1,11 @@
 import React from 'react'
+import { Container } from './style'
 
 const Navbar = () => {
   return (
-    <div>
-      navbar
-    </div>
+    <Container>
+      
+    </Container>
   )
 }
 
