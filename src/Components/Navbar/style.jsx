@@ -6,6 +6,7 @@ export const Container = styled.div`
     padding: 0 5%;
     background-color:#4A2B33;
     
+    
 
 
 `
@@ -39,6 +40,11 @@ export const Navdiv = styled.div`
         transition: 1s;
     }
 
+    
+    @media (max-width:820px) {
+        display: none !important;
+    }
+
 `
 
 export const Local = styled.div`
@@ -50,6 +56,9 @@ export const Local = styled.div`
         cursor: pointer;
         transform: scale(1.2);
         transition: 1s;
+    }
+    @media (max-width:570px) {
+        display: none !important;
     }
 `
 
@@ -67,7 +76,16 @@ export const Fonimg = styled.div`
     display: flex;
     justify-content: center;
     background-image: url(${Navimage});
-    /* background-position: center; */
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+`
+
+export const Burgerr = styled.div`
+    display: block !important;
+`
+
+export const Button = styled.button`
+    color: black !important;
+    background: red;
 `
