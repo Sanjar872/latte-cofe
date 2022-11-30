@@ -21,6 +21,7 @@ const Navbar = () => {
           </Brand>
 
           <Local>
+            {/* <div></div> */}
               <img src={Smsicons} alt="" />
               <img src={Facebook} alt="" />
               <img src={Instagram} alt="" />

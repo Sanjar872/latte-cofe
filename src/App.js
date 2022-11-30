@@ -7,15 +7,17 @@ import Worktime from './Components/WorkTime/Worktime';
 import Info from './Components/Infor/Info';
 import Footer from './Components/Footer/Footer';
 import Galery from './Components/Gallery/Gallery';
+import About from './Components/About/About';
 function App() {
   return (
     <div className='Container'>
       <Navbar/>
-      <Home/>
+      <About/>
       <Menu/>
       <Worktime/>
       <Galery/>
       <Info/>
+      <Home/>
       <Footer/>
 
     </div>

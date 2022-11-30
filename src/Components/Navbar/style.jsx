@@ -3,8 +3,9 @@ import Navimage from './images/nav-img.png'
 export const Container = styled.div`
     width: 100%;
     height: 100vh;
-    padding: 0 4%;
-    background-color:#4A2B33 ;
+    padding: 0 5%;
+    background-color:#4A2B33;
+    
 
 
 `
@@ -29,14 +30,27 @@ export const Navdiv = styled.div`
         font-weight: 400;
         font-size: 15px;
         line-height: 24px;
+        
+    }
+
+    ul li:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 1s;
     }
 
 `
 
 export const Local = styled.div`
-    width: 150px;
+    width: 235px;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
+    gap: 30px;
+    img:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: 1s;
+    }
 `
 
 export const Brand = styled.div`
