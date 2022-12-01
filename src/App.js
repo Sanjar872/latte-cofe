@@ -1,7 +1,6 @@
 import './App.css';
 import {Routes, Route} from "react-router-dom"
 import Navbar from './Components/Navbar/Navbar';
-import Home from './Components/Home/Home'
 import Menu from './Components/Menu/Menu'
 import Worktime from './Components/WorkTime/Worktime';
 import Info from './Components/Infor/Info';
@@ -17,7 +16,6 @@ function App() {
       <Worktime/>
       <Galery/>
       <Info/>
-      <Home/>
       <Footer/>
 
     </div>
