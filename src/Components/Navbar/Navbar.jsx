@@ -15,14 +15,17 @@ const Scrolling = (value)=>{
   })
 }
 
-const Navbar = () => {
+// Erorr Alert
+function Erorr() {
+  alert('This website is in test mode')
+}
 
+
+const Navbar = () => {
 
 
   const [isClosed, setIsClosed] = useState(false);
   const toggleClosed = () => setIsClosed(!isClosed);
-
-
 
 
   return (
@@ -42,9 +45,9 @@ const Navbar = () => {
 
         <Local>
           {/* <div></div> */}
-          <img src={Smsicons} alt="" />
-          <img src={Facebook} alt="" />
-          <img src={Instagram} alt="" />
+          <img onClick={Erorr} src={Facebook} alt="" />
+          <img onClick={Erorr} src={Smsicons} alt="" />
+          <img onClick={Erorr} src={Instagram} alt="" />
         </Local>
         <div onClick={toggleClosed}>
           <Burger isClosed={isClosed} />
@@ -64,9 +67,9 @@ const Navbar = () => {
 
           </ul>
           <MenuLocal>
-          <img src={Smsicons} alt="" />
-          <img src={Facebook} alt="" />
-          <img src={Instagram} alt="" />
+          <img onClick={Erorr} src={Smsicons} alt="" />
+          <img onClick={Erorr} src={Facebook} alt="" />
+          <img onClick={Erorr} src={Instagram} alt="" />
           </MenuLocal>
         </Menus>
 
