@@ -14,7 +14,16 @@ export const AboutPage = styled.div`
         text-align: center;
         line-height: 45px;
         font-weight: 400;
-        color: #222222
-;
+        color: #222222;
+        @media (max-width:640px) {
+            font-size: 25px;
+            width: 100%;
+            padding: 0 3%;
+            line-height: 40px;
+        }
+
+        @media (max-width:375px) {
+            font-size: 20px;
+        }
     }
 `

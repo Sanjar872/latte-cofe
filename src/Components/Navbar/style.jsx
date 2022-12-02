@@ -16,6 +16,31 @@ export const Nav = styled.div`
     justify-content: space-between;
     height: 70px;
     align-items: center;
+
+    .burger{
+        display: none;
+    }
+    .show-menu{
+        opacity: 1;
+        visibility: visible;
+        @keyframes appear {
+            0% { opacity: 0; translate: 0 50px; }
+            100% { opacity: 1; }
+        }
+    
+        h2{
+            animation: appear 0.3s both;
+        }
+    }
+    @media (max-width:960px) {
+        .burger{
+            display: block;
+            margin: 0 30px;
+            z-index: 3;
+        }
+    }
+
+
 `
 
 export const Navdiv = styled.div`
@@ -64,6 +89,11 @@ export const Local = styled.div`
 
 export const Brand = styled.div`
     color: #D27487;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
     h1 {
         font-size: 35px;
     }
@@ -88,4 +118,44 @@ export const Burgerr = styled.div`
 export const Button = styled.button`
     color: black !important;
     background: red;
+`
+
+export const Menus = styled.div`
+   width: 50%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 32px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    color: white;
+
+    h1 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    ul li {
+        line-height: 30px;
+        list-style: none;
+    }
+
+`
+export const Burgerrr = styled.div`
+    display: block !important;
+`
+
+export const MenuLocal = styled.div`
+    display: flex;
+    gap: 20px;
+
 `

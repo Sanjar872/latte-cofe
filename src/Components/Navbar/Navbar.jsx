@@ -1,10 +1,10 @@
 import React from 'react'
-import { Brand, Burgerr, Button, Container, Fonimg, Local, Nav, Navdiv } from './style'
+import { Brand, Burgerr, Button, Container, Fonimg, Local, MenuLocal, Menus, Nav, Navdiv } from './style'
 import Smsicons from './images/sms.png'
 import Facebook from './images/facebook.png'
 import Instagram from './images/instagreme.png'
-import { BurgerSpin } 
-  from "react-burger-icons";
+
+import { BurgerSpin as Burger } from 'react-burger-icons' // react burger icon
 import { useState } from "react";
 
 const Navbar = () => {
@@ -12,8 +12,9 @@ const Navbar = () => {
 
 
   const [isClosed, setIsClosed] = useState(false);
+  const toggleClosed = () => setIsClosed(!isClosed);
 
-  const toggleClosed = ( ) => setIsClosed(!isClosed);
+
 
 
   return (
@@ -37,19 +38,30 @@ const Navbar = () => {
           <img src={Facebook} alt="" />
           <img src={Instagram} alt="" />
         </Local>
-        <Button
-      onClick={() => setIsClosed(!isClosed)}
-      style={{
-        width: "50px",
-        height: "50px",
-        display: "grid",
-        placeItems: "center",
-        color:"black",
-      }}
-    >
-      <BurgerSpin isClosed={isClosed} />
-    </Button>
-         
+        <div onClick={toggleClosed}>
+          <Burger isClosed={isClosed} />
+        </div>
+      
+
+        <Menus className={`${isClosed === true ? 'show-menu' : ''}`}>
+          <div>
+          <h1>
+            LATTE CAFE</h1>
+          </div>
+          <ul>
+            <li>About</li>
+            <li>Menu</li>
+            <li>Info</li>
+            <li>Booking</li>
+
+          </ul>
+          <MenuLocal>
+          <img src={Smsicons} alt="" />
+          <img src={Facebook} alt="" />
+          <img src={Instagram} alt="" />
+          </MenuLocal>
+        </Menus>
+
       </Nav>
       <Fonimg>
       </Fonimg>
