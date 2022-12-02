@@ -7,6 +7,14 @@ import Instagram from './images/instagreme.png'
 import { BurgerSpin as Burger } from 'react-burger-icons' // react burger icon
 import { useState } from "react";
 
+//Scrolling
+const Scrolling = (value)=>{
+  window.scrollTo({
+    top:value,
+    behavior:'smooth'
+  })
+}
+
 const Navbar = () => {
 
 
@@ -18,14 +26,14 @@ const Navbar = () => {
 
 
   return (
-    <Container>
+    <Container> 
       <Nav>
         <Navdiv>
           <ul>
-            <li>About</li>
-            <li>Menu</li>
-            <li>Info</li>
-            <li>Booking</li>
+            <li onClick={()=>Scrolling(660)}>About</li>
+            <li onClick={()=>Scrolling(1290)}>Menu</li>
+            <li onClick={()=>Scrolling(4000)}>Info</li>
+            <li onClick={()=>Scrolling(2450)}>Booking</li>
           </ul>
         </Navdiv>
         <Brand>
@@ -49,10 +57,10 @@ const Navbar = () => {
             LATTE CAFE</h1>
           </div>
           <ul>
-            <li>About</li>
-            <li>Menu</li>
-            <li>Info</li>
-            <li>Booking</li>
+            <li onClick={()=>{Scrolling(660) ; setIsClosed(false) }} >About</li>
+            <li onClick={()=>{Scrolling(1290) ; setIsClosed(false)}}>Menu</li>
+            <li onClick={()=>{Scrolling(4000) ; setIsClosed(false)}}>Info</li>
+            <li onClick={()=>{Scrolling(2450) ; setIsClosed(false)}}>Booking</li>
 
           </ul>
           <MenuLocal>

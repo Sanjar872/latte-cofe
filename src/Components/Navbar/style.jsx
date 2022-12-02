@@ -17,6 +17,7 @@ export const Nav = styled.div`
     height: 70px;
     align-items: center;
 
+
     .burger{
         display: none;
     }
@@ -93,7 +94,7 @@ export const Brand = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     h1 {
         font-size: 35px;
     }
