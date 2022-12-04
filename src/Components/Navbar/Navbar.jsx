@@ -41,6 +41,7 @@ const Navbar = () => {
         </Navdiv>
         <Brand>
           <h1>LATTE CAFE</h1>
+
         </Brand>
 
         <Local>
@@ -67,9 +68,11 @@ const Navbar = () => {
 
           </ul>
           <MenuLocal>
+            
           <img onClick={Erorr} src={Smsicons} alt="" />
           <img onClick={Erorr} src={Facebook} alt="" />
           <img onClick={Erorr} src={Instagram} alt="" />
+
           </MenuLocal>
         </Menus>
 
